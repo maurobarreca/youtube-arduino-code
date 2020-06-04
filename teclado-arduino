@@ -1,0 +1,27 @@
+#include "Keyboard.h"
+
+void setup() {
+
+  Keyboard.begin();
+  delay(65000);
+  Keyboard.press(KEY_RIGHT_ARROW);
+  Keyboard.release(KEY_RIGHT_ARROW);
+  delay(1000);
+  Keyboard.press(KEY_RETURN);
+  Keyboard.release(KEY_RETURN);
+  delay(3000);
+  Keyboard.print("password");
+  delay(100);
+  Keyboard.press(KEY_RETURN);
+  Keyboard.release(KEY_RETURN);
+  delay(30000);
+  Keyboard.press(KEY_LEFT_GUI);
+  Keyboard.press(KEY_F2);
+  delay(1000);
+  Keyboard.releaseAll();
+  
+}
+
+void loop() {
+
+}
